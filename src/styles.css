@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.a11ytext{
+    clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+footer{
+    background-color: #089B12;
+}
+
+.link > img{
+    width: 30px;
+
+}
+
+.card-link > img{
+    width: 20px;
+
+}
+
+figure{
+    position: relative;
+}
+
+figcaption{
+    position: absolute;
+    bottom: 0;
+    font-size: 3em;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #089B12;
+}
+
+.about{
+    background-color: #ffffff;
+    width: 500px;
+}
+
+.about > h2{
+    font-size: 2em;
+}
