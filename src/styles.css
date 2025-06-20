@@ -14,11 +14,11 @@
 }
 
 footer{
-    background-color: #089B12;
+    background-color: #0891B2;
 }
 
 .link > img{
-    width: 30px;
+    width: 40px;
 
 }
 
@@ -29,12 +29,21 @@ footer{
 
 figure{
     position: relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+figure > img{
+    width: 800px;
+    box-shadow: 1px 1px 4px #8B8C8B;
 }
 
 figcaption{
     position: absolute;
-    bottom: 0;
-    font-size: 3em;
+    bottom: 47px;
+    font-size: 5em;
+    line-height:0;
     color: white;
 }
 
@@ -42,14 +51,76 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #089B12;
+    height: 100vh;
+    position:relative;
+}
+
+header::before {
+    content: '';
+    display:block;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    top:0;
+    left:0;
+    transform:skew(0, -12deg);
+    transform-origin: top left;
+    background-color: #0891b2;
+    position: absolute;
+    box-shadow: 1px 1px 4px;
 }
 
 .about{
     background-color: #ffffff;
-    width: 500px;
+    width: 800px;
+    height: 600px;
+    box-shadow: 1px 1px 4px #8B8C8B;
+    padding: 1.5em;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    font-size: 1.5em;
+    gap: 25px;
 }
 
-.about > h2{
-    font-size: 2em;
+.about > p{
+    flex-grow:1;
+    color: #575655;
+    line-height: 1.5em;
+}
+
+h2{
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+.about > .links{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+main{
+    padding: 50px;
+}
+
+.my-work{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 50px;
+    column-gap: 35px;
+
+}
+
+.card{
+    box-shadow: 2px 2px 4px #8B8C8B;
+    display:flex;
+    flex-direction:column;
+}
+
+.card-title{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
 }
