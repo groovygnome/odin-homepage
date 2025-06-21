@@ -23,7 +23,7 @@ footer{
 }
 
 .card-link > img{
-    width: 20px;
+    width: 2rem;
 
 }
 
@@ -35,14 +35,14 @@ figure{
 }
 
 figure > img{
-    width: 800px;
+    max-width: 800px;
     box-shadow: 1px 1px 4px #8B8C8B;
 }
 
 figcaption{
     position: absolute;
     bottom: 47px;
-    font-size: 5em;
+    font-size: 3.75rem;
     line-height:0;
     color: white;
 }
@@ -72,25 +72,25 @@ header::before {
 
 .about{
     background-color: #ffffff;
-    width: 800px;
-    height: 600px;
+    max-width: 800px;
+    max-height: 600px;
     box-shadow: 1px 1px 4px #8B8C8B;
     padding: 1.5em;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     gap: 25px;
 }
 
 .about > p{
     flex-grow:1;
     color: #575655;
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
 
 h2{
-    font-size: 2.5em;
+    font-size: 3rem;
     font-weight: normal;
 }
 
@@ -101,7 +101,7 @@ h2{
 }
 
 main{
-    padding: 50px;
+    padding: 50px 100px;
 }
 
 .my-work{
@@ -109,18 +109,39 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     row-gap: 50px;
-    column-gap: 35px;
 
 }
 
 .card{
     box-shadow: 2px 2px 4px #8B8C8B;
-    display:flex;
-    flex-direction:column;
+    display:grid;
+    grid-template-rows: 3fr 2fr;
+    justify-content: flex-start;
+    min-height: 300px;
+    max-width: 400px;
+}
+
+.card > img{
+    width: 100%;
 }
 
 .card-title{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+    align-items: center;
+}
+
+.card-title > h3{
+    font-weight:normal;
+    font-size: 1.25rem;
+}
+
+.card-text{
+    padding: 10px 25px;
+}
+
+.card-description{
+    color: #575655;
+    font-size: 1.1rem;
 }
