@@ -18,7 +18,7 @@ footer{
 }
 
 .link > img{
-    width: 40px;
+    width: 50px;
 
 }
 
@@ -35,14 +35,14 @@ figure{
 }
 
 figure > img{
-    max-width: 800px;
+    width: 800px;
     box-shadow: 1px 1px 4px #8B8C8B;
 }
 
 figcaption{
     position: absolute;
     bottom: 47px;
-    font-size: 3.75rem;
+    font-size: 5rem;
     line-height:0;
     color: white;
 }
@@ -72,25 +72,25 @@ header::before {
 
 .about{
     background-color: #ffffff;
-    max-width: 800px;
-    max-height: 600px;
+    width: 800px;
+    height: 600px;
     box-shadow: 1px 1px 4px #8B8C8B;
     padding: 1.5em;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     gap: 25px;
 }
 
 .about > p{
     flex-grow:1;
     color: #575655;
-    line-height: 1.5rem;
+    line-height: 2.75rem;
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: normal;
 }
 
@@ -109,20 +109,23 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     row-gap: 50px;
+    column-gap: 5%;
 
 }
 
 .card{
     box-shadow: 2px 2px 4px #8B8C8B;
-    display:grid;
-    grid-template-rows: 3fr 2fr;
+    display:flex;
+    flex-direction:column;
     justify-content: flex-start;
-    min-height: 300px;
-    max-width: 400px;
+
+    width: 100%;
 }
 
 .card > img{
-    width: 100%;
+    flex: 0 0 33%;
+    max-height: 65%;
+    object-fit: cover;
 }
 
 .card-title{
@@ -139,9 +142,91 @@ main{
 
 .card-text{
     padding: 10px 25px;
+    flex: 1;
 }
 
 .card-description{
     color: #575655;
     font-size: 1.1rem;
+}
+
+.one{
+    justify-self: start;
+}
+
+.two{
+    justify-self: center;
+}
+
+.three{
+    justify-self: end;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+}
+
+.contact > h2{
+    padding-bottom: 10px;
+}
+
+.contact{
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+address{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.phone-and-email > p{
+    display:flex;
+    align-items:center;
+    gap: 12px;
+    padding-top: 10px;
+}
+
+.phone-and-email > p > img{
+    width: 40px;
+}
+
+a, a:hover, a:visited{
+    text-decoration:none;
+    color: inherit;
+}
+
+.contact-link > img{
+    width: 60px;
+    padding-right: 20px;
+}
+
+@media (max-width: 1920px){
+    figure > img{
+        width: 700px;
+    }
+
+    figcaption{
+        font-size: 3.75rem;
+    }
+
+    .about{
+        width: 700px;
+        height: 500px;
+    }
+
+    .about{
+        font-size: 1.5rem;
+    }
+
+    .about > p{
+        line-height: 1.5rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
 }
