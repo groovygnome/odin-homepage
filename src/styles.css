@@ -204,9 +204,9 @@ a, a:hover, a:visited{
     padding-right: 20px;
 }
 
-@media (max-width: 1920px){
+@media (min-width: 1200px) and (max-width: 1920px){
     figure > img{
-        width: 700px;
+        width: 600px;
     }
 
     figcaption{
@@ -214,8 +214,8 @@ a, a:hover, a:visited{
     }
 
     .about{
-        width: 700px;
-        height: 500px;
+        width: 600px;
+        height: 400px;
     }
 
     .about{
@@ -229,4 +229,117 @@ a, a:hover, a:visited{
     h2{
         font-size: 3rem;
     }
+
+    .link > img{
+        width: 40px;
+    }
+
+    .contact{
+        font-size: 1.5rem;
+    }
+
+    .phone-and-email > p > img{
+        width: 30px;
+    }
+
+    .contact-link > img{
+        width: 50px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px){
+    figure{
+        position: absolute;
+        top: 40px;
+        left: 50px;
+    }
+
+    header::before {
+        transform:skew(0, -20deg);
+        transform-origin: top left;
+    }
+
+    figure > img{
+        width: 450px;
+        height: 500px;
+        object-fit: cover;
+        float:left;
+    }
+
+    figcaption{
+        font-size: 3rem;
+        text-wrap: nowrap;
+        position: absolute;
+        top: 90px;
+        right: 10px;
+        text-shadow: 1px 1px 3px black;
+        height: 0;
+        width: 0;
+
+    }
+
+    .about{
+        width: 700px;
+        height: 450px;
+        margin-top: 50px;
+        gap: 0;
+    }
+
+    .about > h2{
+        align-self: end;
+        padding-right: 15%;
+        padding-top: 20px;
+    }
+
+    .about{
+        font-size: 1.5rem;
+    }
+
+    .about > p{
+        line-height: 2.25rem;
+        align-self:end;
+    }
+
+    .about > p::before{
+        content: '';
+        display: inline-block;
+        width: 330px;
+        height: 240px;
+        float: left;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    .my-work{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .card-link > img{
+        width: 1.75rem;
+    }
+
+    .link > img{
+        width: 40px;
+    }
+
+    .contact{
+        font-size: 1.5rem;
+    }
+
+    .phone-and-email > p > img{
+        width: 30px;
+    }
+
+    .contact-link > img{
+        width: 50px;
+    }
+
+}
+
+@media (max-width: 600px){
+
 }
