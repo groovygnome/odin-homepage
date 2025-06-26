@@ -278,7 +278,7 @@ a, a:hover, a:visited{
         text-wrap: nowrap;
         position: absolute;
         top: 90px;
-        right: 10px;
+        right: 30px;
         text-shadow: 1px 1px 3px black;
         height: 0;
         width: 0;
@@ -349,7 +349,7 @@ a, a:hover, a:visited{
     footer > img{
         object-fit: cover;
         width: 375px;
-
+        padding-left: 25px;
     }
 
 }
@@ -361,17 +361,20 @@ a, a:hover, a:visited{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         width: 100vw;
+        height: auto;
     }
 
     figure{
+        padding-top: 25px;
         height: 75vh;
-        width: 75vw;
+        width: 80vw;
         justify-self: center;
     }
 
     header::before {
-        transform:skew(0, -40deg);
+        transform:skew(0, -30deg);
         transform-origin: top left;
+        height: calc(0.7 * 100vh);
     }
 
     figure > img{
@@ -387,11 +390,15 @@ a, a:hover, a:visited{
         position: absolute;
         text-shadow: 1px 1px 3px black;
         line-height:6rem;
-
+        bottom: 0;
+        height: 170px;
+        padding-left: 5%;
     }
 
     .about{
+        height: auto;
         width: 100vw;
+        display: inline;
         gap: 0;
         box-shadow: none;
         background-color: transparent;
@@ -399,11 +406,18 @@ a, a:hover, a:visited{
 
     .about{
         font-size: 1.5rem;
+        padding: 1.5em 0;
     }
 
     .about > p{
         line-height: 2.15rem;
-        align-self:end;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .about > .links{
+        justify-content: center;
+
     }
 
     h2{
@@ -411,22 +425,41 @@ a, a:hover, a:visited{
         text-align:center;
     }
 
+    main{
+        padding: 50px 25px 150px 25px;
+        height: auto;
+    }
+
     .my-work{
         display:grid;
         grid-template-columns: 1fr;
-
     }
 
     .card-link > img{
-        width: 1.75rem;
+        width: 2rem;
+    }
+
+    .card-title > h3{
+        font-size: 1.5rem;
+    }
+
+    .card-link{
+        padding-left: 10px;
     }
 
     .link > img{
-        width: 40px;
+        padding-top: 10px;
+        width: 50px;
+    }
+
+    footer{
+        flex-direction:column;
+        padding: 60px 0 0 0;
     }
 
     .contact{
         font-size: 1.25rem;
+        padding: 0 25px;
     }
 
     .phone-and-email > p > img{
@@ -439,8 +472,21 @@ a, a:hover, a:visited{
 
     footer > img{
         object-fit: cover;
-        width: 375px;
+        width: 100vw;
 
+    }
+
+    address{
+        gap: 25px;
+        padding-bottom: 50px;
+    }
+
+    address > p{
+        font-size: 1.75rem;
+    }
+
+    address > links{
+        align-self:center;
     }
 
 
